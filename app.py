@@ -90,7 +90,7 @@ def index():
 
                         try:
                             comtag = commentbox.div.div.find_all('div', {'class': 't-ZTKy'})
-                            custComment = comtag[0].find("div", {"class": ""}).text
+                            custComment = comtag[0].find("div", {"class": ""}).text[:-9]
                         except:
                             custComment = 'No Customer Comment'
 
